@@ -10,6 +10,13 @@ import Foundation
 import Parse
 
 class Applicant : PFUser {
+    override init() {
+        super.init()
+        let acl = PFACL()
+        acl.setReadAccess(true, forRoleWithName: "Admin")
+        acl.setWriteAccess(true, forRoleWithName: "Admin")
+        self.acl = acl
+    }
     
     
 

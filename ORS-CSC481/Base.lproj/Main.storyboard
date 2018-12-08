@@ -21,16 +21,40 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anm-t6-Jbg">
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applicant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-Aq-lKS">
+                                        <rect key="frame" x="117" y="148" width="140" height="37"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="oDR-Aq-lKS" firstAttribute="centerY" secondItem="anm-t6-Jbg" secondAttribute="centerY" id="3z8-rV-Pr9"/>
+                                    <constraint firstItem="oDR-Aq-lKS" firstAttribute="centerX" secondItem="anm-t6-Jbg" secondAttribute="centerX" id="whi-zy-I31"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="j61-CV-Bux" appends="YES" id="cWa-jT-0h2"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6B-3H-9Ii">
                                 <rect key="frame" x="0.0" y="20" width="375" height="314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HR Rep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-BW-u75">
+                                        <rect key="frame" x="134" y="139" width="107" height="37"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.1378527564" blue="0.1416739444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="fPV-BW-u75" firstAttribute="centerY" secondItem="z6B-3H-9Ii" secondAttribute="centerY" id="BaO-wB-k04"/>
+                                    <constraint firstItem="fPV-BW-u75" firstAttribute="centerX" secondItem="z6B-3H-9Ii" secondAttribute="centerX" id="YRD-Wg-Asf"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="sI1-c1-MrF" appends="YES" id="qbZ-0x-2dI"/>
                                 </connections>
@@ -54,8 +78,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sI1-c1-MrF" userLabel="Hr_Rep_Tap_Gesture"/>
-                <tapGestureRecognizer id="j61-CV-Bux" userLabel="Applicant_Tap_Gesture"/>
+                <tapGestureRecognizer id="sI1-c1-MrF" userLabel="Hr_Rep_Tap_Gesture">
+                    <connections>
+                        <action selector="didTapHrView:" destination="BYZ-38-t0r" id="r7U-Ta-xCG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="j61-CV-Bux" userLabel="Applicant_Tap_Gesture">
+                    <connections>
+                        <action selector="didTapApplicantView:" destination="BYZ-38-t0r" id="Wbk-Bs-4L7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
@@ -159,10 +191,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="klJ-YH-XiW"/>
                     </view>
+                    <connections>
+                        <segue destination="xVB-za-Gjb" kind="presentation" identifier="toHRHub" id="zGg-VU-rRj"/>
+                        <segue destination="ljA-Bf-oAT" kind="presentation" identifier="toApplicantHub" id="msL-TL-KgP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dmm-ys-6qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="898" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fGq-xx-8Us">
+            <objects>
+                <viewController id="xVB-za-Gjb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2h4-LM-yvx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rCk-5j-Olf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ae0-X3-out" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2215" y="-188"/>
         </scene>
         <!--New Applicant Sign Up View Controller-->
         <scene sceneID="Vmq-rT-omp">
@@ -284,6 +335,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1D-O2-IiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="927" y="888"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sgl-RI-vFV">
+            <objects>
+                <viewController id="ljA-Bf-oAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y5p-aM-EsO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VdR-Rd-82A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zh-dg-tDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="609"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

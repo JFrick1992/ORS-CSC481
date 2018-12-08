@@ -10,5 +10,19 @@ import Foundation
 import Parse
 
 class HR_Rep : PFUser{
+    var role = PFRole()
+    
+    
+    override init() {
+        super.init()
+    }
+    
+    init(_ username: String, _ password: String, _ email: String) {
+        super.init()
+        self.username = username
+        self.password = password
+        self.email = email
+        self.role = Admin()
+    }
     
 }

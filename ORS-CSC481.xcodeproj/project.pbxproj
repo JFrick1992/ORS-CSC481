@@ -19,6 +19,7 @@
 		5B21660F21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21660E21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift */; };
 		5B21661521BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661421BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift */; };
 		5B21661721BB9FF900F6F4B6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */; };
+		5B21661D21BBAEC200F6F4B6 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661C21BBAEC200F6F4B6 /* Admin.swift */; };
 		939B221D8B2473EE8526FEB0 /* Pods_ORS_CSC481.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFB78B9F066A61023576D8 /* Pods_ORS_CSC481.framework */; };
 		A43F7BD0198867ADF4F0E525 /* Pods_ORS_CSC481Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C82FCF0E7AA13A4B1E645 /* Pods_ORS_CSC481Tests.framework */; };
 		EDDEA28B17EA76BFA856271B /* Pods_ORS_CSC481UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9AB97A4C17CFEEABD81231 /* Pods_ORS_CSC481UITests.framework */; };
@@ -66,6 +67,7 @@
 		5B21660E21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOrHRChoiceViewController.swift; sourceTree = "<group>"; };
 		5B21661421BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApplicantSignUpViewController.swift; sourceTree = "<group>"; };
 		5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		5B21661C21BBAEC200F6F4B6 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
 		8B99C736012CCD5713DB205D /* Pods-ORS-CSC481.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481.release.xcconfig"; sourceTree = "<group>"; };
 		AACFB78B9F066A61023576D8 /* Pods_ORS_CSC481.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORS_CSC481.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3B5D672D2E648979744000 /* Pods-ORS-CSC481.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				5B21660921BB941F00F6F4B6 /* HR_Rep.swift */,
 				5B21660B21BB946800F6F4B6 /* Applicant.swift */,
+				5B21661C21BBAEC200F6F4B6 /* Admin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				5B21661521BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift in Sources */,
 				5B21660A21BB941F00F6F4B6 /* HR_Rep.swift in Sources */,
 				5B21660F21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift in Sources */,
+				5B21661D21BBAEC200F6F4B6 /* Admin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

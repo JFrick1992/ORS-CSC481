@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		5B2165D821BB902F00F6F4B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2165D721BB902F00F6F4B6 /* AppDelegate.swift */; };
-		5B2165DA21BB902F00F6F4B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2165D921BB902F00F6F4B6 /* ViewController.swift */; };
 		5B2165DD21BB902F00F6F4B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2165DB21BB902F00F6F4B6 /* Main.storyboard */; };
 		5B2165DF21BB903400F6F4B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2165DE21BB903400F6F4B6 /* Assets.xcassets */; };
 		5B2165E221BB903400F6F4B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2165E021BB903400F6F4B6 /* LaunchScreen.storyboard */; };
 		5B2165ED21BB903400F6F4B6 /* ORS_CSC481Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2165EC21BB903400F6F4B6 /* ORS_CSC481Tests.swift */; };
 		5B2165F821BB903400F6F4B6 /* ORS_CSC481UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2165F721BB903400F6F4B6 /* ORS_CSC481UITests.swift */; };
+		5B21660721BB935600F6F4B6 /* ParseAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21660621BB935600F6F4B6 /* ParseAPIManager.swift */; };
+		5B21660A21BB941F00F6F4B6 /* HR_Rep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21660921BB941F00F6F4B6 /* HR_Rep.swift */; };
+		5B21660C21BB946800F6F4B6 /* Applicant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21660B21BB946800F6F4B6 /* Applicant.swift */; };
+		5B21660F21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21660E21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift */; };
+		5B21661521BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661421BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift */; };
+		5B21661721BB9FF900F6F4B6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */; };
 		939B221D8B2473EE8526FEB0 /* Pods_ORS_CSC481.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFB78B9F066A61023576D8 /* Pods_ORS_CSC481.framework */; };
 		A43F7BD0198867ADF4F0E525 /* Pods_ORS_CSC481Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C82FCF0E7AA13A4B1E645 /* Pods_ORS_CSC481Tests.framework */; };
 		EDDEA28B17EA76BFA856271B /* Pods_ORS_CSC481UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9AB97A4C17CFEEABD81231 /* Pods_ORS_CSC481UITests.framework */; };
@@ -45,7 +50,6 @@
 		49389E259C7851F51BE06B76 /* Pods-ORS-CSC481Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481Tests/Pods-ORS-CSC481Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B2165D421BB902F00F6F4B6 /* ORS-CSC481.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ORS-CSC481.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2165D721BB902F00F6F4B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B2165D921BB902F00F6F4B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B2165DC21BB902F00F6F4B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B2165DE21BB903400F6F4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B2165E121BB903400F6F4B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +60,12 @@
 		5B2165F321BB903400F6F4B6 /* ORS-CSC481UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ORS-CSC481UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2165F721BB903400F6F4B6 /* ORS_CSC481UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORS_CSC481UITests.swift; sourceTree = "<group>"; };
 		5B2165F921BB903400F6F4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B21660621BB935600F6F4B6 /* ParseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseAPIManager.swift; sourceTree = "<group>"; };
+		5B21660921BB941F00F6F4B6 /* HR_Rep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HR_Rep.swift; sourceTree = "<group>"; };
+		5B21660B21BB946800F6F4B6 /* Applicant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicant.swift; sourceTree = "<group>"; };
+		5B21660E21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOrHRChoiceViewController.swift; sourceTree = "<group>"; };
+		5B21661421BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApplicantSignUpViewController.swift; sourceTree = "<group>"; };
+		5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8B99C736012CCD5713DB205D /* Pods-ORS-CSC481.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481.release.xcconfig"; sourceTree = "<group>"; };
 		AACFB78B9F066A61023576D8 /* Pods_ORS_CSC481.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORS_CSC481.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3B5D672D2E648979744000 /* Pods-ORS-CSC481.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +137,10 @@
 		5B2165D621BB902F00F6F4B6 /* ORS-CSC481 */ = {
 			isa = PBXGroup;
 			children = (
+				5B21660D21BB956400F6F4B6 /* ViewControllers */,
+				5B21660821BB940B00F6F4B6 /* Models */,
+				5B21660521BB933E00F6F4B6 /* Parse */,
 				5B2165D721BB902F00F6F4B6 /* AppDelegate.swift */,
-				5B2165D921BB902F00F6F4B6 /* ViewController.swift */,
 				5B2165DB21BB902F00F6F4B6 /* Main.storyboard */,
 				5B2165DE21BB903400F6F4B6 /* Assets.xcassets */,
 				5B2165E021BB903400F6F4B6 /* LaunchScreen.storyboard */,
@@ -153,6 +165,33 @@
 				5B2165F921BB903400F6F4B6 /* Info.plist */,
 			);
 			path = "ORS-CSC481UITests";
+			sourceTree = "<group>";
+		};
+		5B21660521BB933E00F6F4B6 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				5B21660621BB935600F6F4B6 /* ParseAPIManager.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		5B21660821BB940B00F6F4B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B21660921BB941F00F6F4B6 /* HR_Rep.swift */,
+				5B21660B21BB946800F6F4B6 /* Applicant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B21660D21BB956400F6F4B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B21660E21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift */,
+				5B21661421BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift */,
+				5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		5B7BE3AAEF4A8F624250DBBA /* Frameworks */ = {
@@ -301,15 +340,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ORS-CSC481UITests-checkManifestLockResult.txt",
 			);
@@ -323,8 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
@@ -332,8 +365,6 @@
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -349,15 +380,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ORS-CSC481Tests-checkManifestLockResult.txt",
 			);
@@ -371,15 +398,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ORS-CSC481-checkManifestLockResult.txt",
 			);
@@ -395,8 +418,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2165DA21BB902F00F6F4B6 /* ViewController.swift in Sources */,
+				5B21660C21BB946800F6F4B6 /* Applicant.swift in Sources */,
+				5B21660721BB935600F6F4B6 /* ParseAPIManager.swift in Sources */,
 				5B2165D821BB902F00F6F4B6 /* AppDelegate.swift in Sources */,
+				5B21661721BB9FF900F6F4B6 /* LogInViewController.swift in Sources */,
+				5B21661521BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift in Sources */,
+				5B21660A21BB941F00F6F4B6 /* HR_Rep.swift in Sources */,
+				5B21660F21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

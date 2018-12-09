@@ -35,7 +35,7 @@ class LogInViewController: UIViewController {
         if !(self.usernameField.text?.isEmpty)! && !(self.passwordField.text?.isEmpty)! {
             if isHRRep {
                 if (self.usernameField.text)! == "admin" {
-                    logIn("LogInToHRHUb")
+                    logIn("LogInToHRHub")
                 }
             } else {
                 logIn("LogInToAppHub")

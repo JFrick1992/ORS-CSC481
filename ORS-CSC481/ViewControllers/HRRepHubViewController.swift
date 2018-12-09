@@ -13,7 +13,6 @@ class HRRepHubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +26,13 @@ class HRRepHubViewController: UIViewController {
         self.performSegue(withIdentifier: "HRHubToMainPage", sender: nil)
     }
     
-
-
+    @IBAction func didTapCurrentPosts(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToCurrentPosts", sender: nil)
+    }
+    
+    @IBAction func didTapCreatePosts(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToCreatePosts", sender: nil)
+    }
+    
+    
 }

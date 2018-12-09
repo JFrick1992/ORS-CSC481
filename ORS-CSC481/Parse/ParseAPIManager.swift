@@ -19,6 +19,7 @@ class ParseAPIManager {
         PFUser.logInWithUsername(inBackground: username, password: password) {
             (user, error) in
             if let user = user {
+                
                 completion(user as? User, nil)
             } else if let error = error {
                 completion(nil, error)
@@ -31,6 +32,7 @@ class ParseAPIManager {
         let user = User(username, password, email)
         user.signUpInBackground { (success, error) in
             if success {
+
                 completion(user, nil)
         
             } else {

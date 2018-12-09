@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ParseMutableClientConfiguration.server = ParseAPIManager.parseLink
         })
         Parse.initialize(with: parseConfig)
+
         return true
     }
 

@@ -11,6 +11,7 @@ import Parse
 
 class User: PFUser {
     @NSManaged var isAdmin : Bool
+    @NSManaged var role: PFRole
     
     override init() {
         super.init()

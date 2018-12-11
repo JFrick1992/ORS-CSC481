@@ -11,8 +11,10 @@ import Parse
 
 class User: PFUser {
     @NSManaged var isAdmin : Bool
-    @NSManaged var role: PFRole
-    
+    @NSManaged var jobsApplied : [String]
+    @NSManaged var firstName : String
+    @NSManaged var lastName : String
+    @NSManaged var resume : String
     override init() {
         super.init()
     }
@@ -23,5 +25,6 @@ class User: PFUser {
         self.password = password
         self.email = email
         self.isAdmin = false
+        self.jobsApplied = [String]()
     }
 }

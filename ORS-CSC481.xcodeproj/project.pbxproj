@@ -20,8 +20,12 @@
 		5B21661F21BBB9B000F6F4B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21661E21BBB9B000F6F4B6 /* User.swift */; };
 		5B21662321BC43E500F6F4B6 /* ApplicantHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21662221BC43E500F6F4B6 /* ApplicantHubViewController.swift */; };
 		5B21662521BC43F200F6F4B6 /* HRRepHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21662421BC43F200F6F4B6 /* HRRepHubViewController.swift */; };
+		5B21662B21BDFD3500F6F4B6 /* ApplicantNameResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21662A21BDFD3500F6F4B6 /* ApplicantNameResumeViewController.swift */; };
+		5B21662D21BE12AD00F6F4B6 /* ApplicantJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21662C21BE12AD00F6F4B6 /* ApplicantJobCell.swift */; };
+		5B21662F21BE137F00F6F4B6 /* ApplicantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21662E21BE137F00F6F4B6 /* ApplicantProfileViewController.swift */; };
+		5B21663121BE2CCF00F6F4B6 /* JobDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21663021BE2CCF00F6F4B6 /* JobDescriptionViewController.swift */; };
+		5B9CD36121BEDF2D0092A1D6 /* KeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9CD36021BEDF2D0092A1D6 /* KeywordCell.swift */; };
 		939B221D8B2473EE8526FEB0 /* Pods_ORS_CSC481.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFB78B9F066A61023576D8 /* Pods_ORS_CSC481.framework */; };
-		96E5054221BC6E9900BEFC4F /* HrCurrentPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5054121BC6E9900BEFC4F /* HrCurrentPostsViewController.swift */; };
 		96E5054421BC703200BEFC4F /* HrCreateAPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5054321BC703200BEFC4F /* HrCreateAPostViewController.swift */; };
 		96E5054621BC85AF00BEFC4F /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5054521BC85AF00BEFC4F /* Job.swift */; };
 		96E5054821BC923900BEFC4F /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5054721BC923900BEFC4F /* JobCell.swift */; };
@@ -72,8 +76,12 @@
 		5B21661E21BBB9B000F6F4B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B21662221BC43E500F6F4B6 /* ApplicantHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantHubViewController.swift; sourceTree = "<group>"; };
 		5B21662421BC43F200F6F4B6 /* HRRepHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRRepHubViewController.swift; sourceTree = "<group>"; };
+		5B21662A21BDFD3500F6F4B6 /* ApplicantNameResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantNameResumeViewController.swift; sourceTree = "<group>"; };
+		5B21662C21BE12AD00F6F4B6 /* ApplicantJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantJobCell.swift; sourceTree = "<group>"; };
+		5B21662E21BE137F00F6F4B6 /* ApplicantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantProfileViewController.swift; sourceTree = "<group>"; };
+		5B21663021BE2CCF00F6F4B6 /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
+		5B9CD36021BEDF2D0092A1D6 /* KeywordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCell.swift; sourceTree = "<group>"; };
 		8B99C736012CCD5713DB205D /* Pods-ORS-CSC481.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORS-CSC481.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORS-CSC481/Pods-ORS-CSC481.release.xcconfig"; sourceTree = "<group>"; };
-		96E5054121BC6E9900BEFC4F /* HrCurrentPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrCurrentPostsViewController.swift; sourceTree = "<group>"; };
 		96E5054321BC703200BEFC4F /* HrCreateAPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrCreateAPostViewController.swift; sourceTree = "<group>"; };
 		96E5054521BC85AF00BEFC4F /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		96E5054721BC923900BEFC4F /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 				5B21661E21BBB9B000F6F4B6 /* User.swift */,
 				96E5054521BC85AF00BEFC4F /* Job.swift */,
 				96E5054721BC923900BEFC4F /* JobCell.swift */,
+				5B21662C21BE12AD00F6F4B6 /* ApplicantJobCell.swift */,
+				5B9CD36021BEDF2D0092A1D6 /* KeywordCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,8 +213,10 @@
 				5B21661621BB9FF900F6F4B6 /* LogInViewController.swift */,
 				5B21662221BC43E500F6F4B6 /* ApplicantHubViewController.swift */,
 				5B21662421BC43F200F6F4B6 /* HRRepHubViewController.swift */,
-				96E5054121BC6E9900BEFC4F /* HrCurrentPostsViewController.swift */,
 				96E5054321BC703200BEFC4F /* HrCreateAPostViewController.swift */,
+				5B21662A21BDFD3500F6F4B6 /* ApplicantNameResumeViewController.swift */,
+				5B21662E21BE137F00F6F4B6 /* ApplicantProfileViewController.swift */,
+				5B21663021BE2CCF00F6F4B6 /* JobDescriptionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -434,16 +446,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B21660721BB935600F6F4B6 /* ParseAPIManager.swift in Sources */,
+				5B9CD36121BEDF2D0092A1D6 /* KeywordCell.swift in Sources */,
 				5B2165D821BB902F00F6F4B6 /* AppDelegate.swift in Sources */,
+				5B21662F21BE137F00F6F4B6 /* ApplicantProfileViewController.swift in Sources */,
 				96E5054421BC703200BEFC4F /* HrCreateAPostViewController.swift in Sources */,
 				5B21662321BC43E500F6F4B6 /* ApplicantHubViewController.swift in Sources */,
 				5B21661F21BBB9B000F6F4B6 /* User.swift in Sources */,
 				5B21661721BB9FF900F6F4B6 /* LogInViewController.swift in Sources */,
 				5B21661521BB9BAE00F6F4B6 /* NewApplicantSignUpViewController.swift in Sources */,
+				5B21663121BE2CCF00F6F4B6 /* JobDescriptionViewController.swift in Sources */,
 				96E5054821BC923900BEFC4F /* JobCell.swift in Sources */,
 				96E5054621BC85AF00BEFC4F /* Job.swift in Sources */,
 				5B21662521BC43F200F6F4B6 /* HRRepHubViewController.swift in Sources */,
-				96E5054221BC6E9900BEFC4F /* HrCurrentPostsViewController.swift in Sources */,
+				5B21662B21BDFD3500F6F4B6 /* ApplicantNameResumeViewController.swift in Sources */,
+				5B21662D21BE12AD00F6F4B6 /* ApplicantJobCell.swift in Sources */,
 				5B21660F21BB9B1B00F6F4B6 /* AppOrHRChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

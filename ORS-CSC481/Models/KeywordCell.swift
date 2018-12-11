@@ -1,20 +1,16 @@
 //
-//  JobCell.swift
+//  KeywordCell.swift
 //  ORS-CSC481
 //
-//  Created by Junior on 12/8/18.
+//  Created by Jacob Frick on 12/10/18.
 //  Copyright © 2018 Jacob Frick. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class JobCell: UITableViewCell {
+class KeywordCell: UITableViewCell {
 
-    @IBOutlet weak var jobTitle: UILabel!
-    
-    
-
+    @IBOutlet weak var keywordLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

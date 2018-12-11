@@ -40,5 +40,16 @@ class ParseAPIManager {
             }
         }
     }
+    
+    static func getAllJobs(completion: @escaping([Job]?, Error?) -> ()) {
+        let query = Job.query()
+        query?.findObjectsInBackground(block: { (jobs, error) in
+            if let jobs = jobs {
+                completion(jobs as? [Job], nil)
+            } else if let error = error {
+                completion(nil, error)
+            }
+        })
+    }
 }
 

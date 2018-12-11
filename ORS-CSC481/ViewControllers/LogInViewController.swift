@@ -22,7 +22,11 @@ class LogInViewController: UIViewController {
         } else {
             self.registerButton.isHidden = false
         }
-
+        self.passwordField.layer.borderColor = UIColor.darkGray.cgColor
+        self.passwordField.layer.borderWidth = 2
+        
+        self.usernameField.layer.borderColor = UIColor.darkGray.cgColor
+        self.usernameField.layer.borderWidth = 2
         // Do any additional setup after loading the view.
     }
 
